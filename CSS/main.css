@@ -1,0 +1,254 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  font-family: 'Capriola', sans-serif;
+  color: #222;
+}
+
+.top
+{
+  padding: 20px;
+  background: #e5e5e5;
+  min-height: 425px;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+a:hover {
+  color: #757575;
+}
+
+/* Section Styles */
+
+.Header nav li {
+  margin-top: 5px;
+  min-height: 30px;
+  padding: 10px;
+  /* position: relative; */
+  text-align: center;
+  background: #fff;
+  display: block;
+}
+
+.Intro {
+    margin-bottom: 60px;
+}
+.Intro p {
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 20px;
+   color: #757575;
+ }
+
+ .Intro Img {
+   width: 320px;
+   height: 200px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+
+/* h1 font size */
+h1 {
+  font-size: 20px;
+}
+
+/* Title, Img Spacing, & Img Sizing for top and bottom */
+.main {
+  margin-bottom: 20px;
+}
+
+.Portfolio,
+.Marketing,
+.Search,
+.TravelApp,
+.MapofSpots,
+.PhotoGallery,
+.Calculator {
+  padding-top: 20px;
+  background: #fff;
+  margin-top: -18px;
+  padding-bottom: 30px;
+}
+
+.Marketing h1,
+.Search h1,
+.TravelApp h1,
+.MapofSpots h1,
+.PhotoGallery h1,
+.Calculator h1{
+  padding-top: 20px;
+}
+.introimg,
+.ImgSize {
+    width: 320px;
+    height: 200px;
+}
+
+/* resize images */
+.introimg img,
+.ImgSize img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contact and Footer Area Styles */
+.bottom {
+  padding: 20px;
+  background: #e5e5e5;
+  margin-top: 30px;
+  /* margin-bottom: 30px; */
+  min-height: 365px;
+}
+
+.Contact {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  color: #757575;
+}
+
+.Contact h1 {
+  text-align: center;
+  color:#4d4d4d;
+}
+
+.Contact p {
+  padding-top: 25px;
+  margin: 10px;
+}
+
+.contactinfo {
+  color: #4d4d4d;
+  font-weight: bold;
+}
+
+.phone li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.email li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.footer {
+  padding-top: 30px;
+  border-top: 1px solid #cecece;
+  margin-bottom: 25px;
+  /* background: #e5e5e5; */
+}
+
+#name {
+  float: left;
+  font-size: 20px;
+}
+
+#bktotp {
+  float: right;
+}
+
+.footernav {
+  display: none;
+}
+
+/* Styling for Tablets' width */
+@media(min-width: 769px) {
+
+  /* Header Styles */
+  .Header nav li {
+    display: inline-block;
+    /* text-align: center; */
+    background: none;
+  }
+
+  /* Intro Styles */
+  .introimg {
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .Intro p {
+    font-size: 1.3em;
+  }
+
+  /* Contact Style */
+  .Contact {
+    font-size: 1.3em;
+  }
+
+  .Contact P {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  /* Footer Styles */
+  .footernav,
+  .footernav li {
+    float: right;
+    display: inline-block;
+    padding-left: 50px;
+  }
+
+  #bktotp {
+    display: none;
+  }
+
+/* Main Section Styles */
+  .Marketing,
+  .Search,
+  .TravelApp,
+  .MapofSpots,
+  .PhotoGallery,
+  .Calculator {
+    display: inline-block;
+    width: 45%;
+    margin: -20px;
+  }
+}
+
+/* Styling for Desktops' width */
+@media(min-width: 1024px) {
+
+/* Header Styles */
+  .Header h1 {
+     float: left;
+  }
+
+  .Header nav ul {
+    float: right;
+    padding-bottom: 20px;
+    margin-right: -1px;
+    width: 300px;
+   }
+
+  .Header {
+    height: 70px;
+  }
+
+  .Marketing,
+  .Search,
+  .TravelApp,
+  .MapofSpots,
+  .PhotoGallery,
+  .Calculator {
+    display: inline-block;
+    width: 32%;
+    margin: -1px;
+  }
+
+  .Contact P {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
